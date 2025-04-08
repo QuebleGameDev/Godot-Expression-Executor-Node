@@ -1,4 +1,4 @@
-@icon("res://addons/expression_executor/icon.png")
+@icon("res://addons/expression_executor/icon.svg")
 extends Node
 class_name ExpressionExecutor
 
