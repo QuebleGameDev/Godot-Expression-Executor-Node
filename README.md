@@ -22,4 +22,5 @@ The **Expression Executor** also allows for custom inputs; basically just values
 In order to use this custom input, our expression would look something like this:
 ![image](https://github.com/user-attachments/assets/4141269f-ac2f-48fb-8ae6-51cb66867005)
 
-
+## Additional Notes
+- You can call multiple methods inside 1 expression by placing each method inside an Array like so: `[print(0), print("hello")] # Will print "0", then "hello"`
