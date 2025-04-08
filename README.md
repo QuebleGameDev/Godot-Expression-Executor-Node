@@ -3,7 +3,7 @@
 A simple Godot addon which adds the **Expression Executor** node.
 
 ## How to install
-1. Download the source code, and copy the *addons* folder directly into your Godot project folder
+1. Download the source code, and copy the `addons` folder directly into your Godot project folder
 2. Open your project in Godot, and verify that the plugin is enabled *(Project Settings -> Plugins)*
 3. You can now add an **Expression Executor** node to any scene!
 
@@ -20,6 +20,7 @@ The **Expression Executor** also allows for custom inputs; basically just values
 3. Finally, the key name of this entry should be "test", and the value should be **10**.
 
 In order to use this custom input, our expression would look something like this:
-```gdscript
-print(test) # Expression result will be 10, as the value of "test" is stored in our custom inputs
-```
+![image](https://github.com/user-attachments/assets/4141269f-ac2f-48fb-8ae6-51cb66867005)
+
+## Additional Notes
+- You can call multiple methods inside 1 expression by placing each method inside an Array like so: `[print(0), print("hello")] # Will print "0", then "hello"`
