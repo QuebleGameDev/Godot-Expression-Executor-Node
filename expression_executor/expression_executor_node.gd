@@ -1,18 +1,20 @@
+@tool
 @icon("res://addons/expression_executor/icon.svg")
 extends Node
 class_name ExpressionExecutor
 
 @export var execute_on_ready: bool = true
+@export_tool_button("Execute Now", "HFlowContainer") var tool_button_action = execute_expression
 @export_custom(PROPERTY_HINT_EXPRESSION, "") var my_expression: String
-@export var custom_inputs: Dictionary[String, Variant]
+@export var inputs: Dictionary[String, Variant]
 
 var expression = Expression.new()
 
 func _ready() -> void:
-	if execute_on_ready:
-		execute_expression(custom_inputs)
+	if execute_on_ready and not Engine.is_editor_hint():
+		execute_expression()
 
-func execute_expression(inputs: Dictionary) -> void:
+func execute_expression() -> void:
 	var error = expression.parse(my_expression, inputs.keys())
 	if error != OK:
 		print("Expression parse error: ", expression.get_error_text())
