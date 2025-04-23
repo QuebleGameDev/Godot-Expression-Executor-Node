@@ -14,7 +14,8 @@ An expression can be filled out in the inspector panel of an **Expression Execut
 >NOTE: By default, the expression will be executed once when the node is ready. If you'd like to trigger the expression manually, call the `execute_expression()` method on the **Expression Executor**.
 
 The **Expression Executor** also allows for custom inputs; basically just values assigned to specific keys that are useable from within the expression.
-*Here's and example:*
+
+*Here's an example:*
 1. Add an entry to your Expression Executor's custom inputs property.
 2. Since it's a Dictionary entry, make the key a String, and the value an integer.
 3. Finally, the key name of this entry should be "test", and the value should be **10**.
