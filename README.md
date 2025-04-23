@@ -3,7 +3,7 @@
 A simple Godot addon which adds the **Expression Executor** node.
 
 ## How to install
-1. Download the source code, and copy the `addons` folder directly into your Godot project folder
+1. Download the source code (by clicking on the blue "Code" button above, then selecting **Download ZIP**), and copy the `addons` folder directly into your Godot project folder
 2. Open your project in Godot, and verify that the plugin is enabled *(Project Settings -> Plugins)*
 3. You can now add an **Expression Executor** node to any scene!
 
